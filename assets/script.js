@@ -16,12 +16,12 @@ function GetInfo() {
       }
       for (i = 0; i < 5; i++) {
         document.getElementById("day" + (i + 1) + "Humidity").innerHTML =
-          "Humidity: " + (data.list[i].main.humidity)
+          "Humidity: " + data.list[i].main.humidity;
       }
-        for (i = 0; i < 5; i++) {
-          document.getElementById("day" + (i + 1) + "Wind").innerHTML =
-            "Wind Speed: " + (data.list[i].wind.speed)
-        }
+      for (i = 0; i < 5; i++) {
+        document.getElementById("day" + (i + 1) + "Wind").innerHTML =
+          "Wind Speed: " + data.list[i].wind.speed;
+      }
       for (i = 0; i < 5; i++) {
         document.getElementById("img" + (i + 1)).src =
           "http://openweathermap.org/img/wn/" +
@@ -34,6 +34,10 @@ function GetInfo() {
 }
 
 
+function addCity() {
+  const newName = document.getElementById("cityInput");
+  document.getElementById("newCity").innerHTML = newName.value; 
+}
 
 function DefaultScreen() {
   document.getElementById("cityInput").defaultValue = "Atlanta";

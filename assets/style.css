@@ -65,7 +65,7 @@ button {
 .icons {
   display: inline-block;
   /* float: left; */
-  height: 350px;
+  height: 300px;
   width: 190px;
   /* margin: 20px; */
   margin-left: 55px;
@@ -91,29 +91,43 @@ button {
   font-weight: bold;
 }
 
-.minValues {
+.tempValues {
   text-align: center;
   display: inline-block;
   border-radius: 5px;
-  height: 25px;
-  width: 85px;
+  height: auto;
+  width: auto;
   margin: 0;
-  margin-bottom: 5px;
-  margin-left: 5px;
+  padding: 10px;
 }
 
-.maxValues {
+.windValues {
   text-align: center;
   display: inline-block;
   border-radius: 5px;
-  height: 25px;
-  width: 85px;
+  height: auto;
+  width: auto;
   margin: 0;
-  margin-bottom: 5px;
-  margin-left: 5px;
+  padding: 10px;
+}
+
+.humidityValues {
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 10px; 
 }
 
 #currentDay {
+  text-align: center;
+  margin-left: 75px;
+  font-weight: bold;
+}
+
+#newCity {
   text-align: center;
   margin-left: 75px;
   font-weight: bold;

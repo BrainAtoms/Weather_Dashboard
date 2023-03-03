@@ -1,70 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+
     <title>Weather Dashboard</title>
-</head>
-<nav>
+  </head>
+  <nav>
     <h1 id="Para1">5 Days Weather Forecast</h1>
-</nav>
-<body onload="DefaultScreen()">
-        
-        <p id="inputContainer">City: <input type="text" id="cityInput"></p>
-        <button id="button" onclick="GetInfo()">Check Weather</button>       
-        <h2 id="cityName">---Atlanta---</h2>
-        <p id="currentDay" class="lead"></p>
-    
-    <div id = "weatherContainer">
-        <div id="iconsContainer">    
-            <div class = "icons">
-                <p class="weather" id="day1"></p>
-                <div class="image"><img class="imgClass" id="img1"></div>
-                <p class="tempValues" id="day1Temp"></p>
-                <p class="windValues" id="day1Wind"></p>
-                <p class="humidityValues" id="day1Humidity"></p>
-            </div>
-            <div class = "icons">
-                <p class="weather" id="day2"></p>
-                <div class="image"><img class="imgClass" id="img2"></div>
-                <p class="tempValues" id="day2Temp"></p>
-                <p class="windValues" id="day2Wind"></p>
-                <p class="humidityValues" id="day2Humidity"></p>
-            </div>
-            <div class = "icons">
-                <p class="weather" id="day3"></p>
-                <div class="image"><img class="imgClass" id="img3"></div>
-                <p class="tempValues" id="day3Temp"></p>
-                <p class="windValues" id="day3Wind"></p>
-                <p class="humidityValues" id="day3Humidity"></p>
-            </div>
-            <div class = "icons">
-                <p class="weather" id="day4"></p>
-                <div class="image"><img class="imgClass" id="img4"></div>
-                <p class="tempValues" id="day4Temp"></p>
-                <p class="windValues" id="day4Wind"></p>
-                <p class="humidityValues" id="day4Humidity"></p>
-            </div>
-            <div class = "icons">
-                <p class="weather" id="day5"></p>
-                <div class="image"><img class="imgClass" id="img5"></div>
-                <p class="tempValues" id="day5Temp"></p>
-                <p class="windValues" id="day5Wind"></p>
-                <p class="humidityValues" id="day5Humidity"></p>
-            </div>
+  </nav>
+  <body onload="DefaultScreen()">
+    <form>
+      <p id="inputContainer">City: <input type="text" id="cityInput" /></p>
+    </form>
+    <button id="button" onclick="GetInfo(),addCity()">Check Weather</button>
+    <h2 id="cityName">---Atlanta---</h2>
+    <p id="newCity"></p>
+    <p id="currentDay" class="lead"></p>
+
+    <div id="weatherContainer">
+      <div id="iconsContainer">
+        <div class="icons">
+          <p class="weather" id="day1"></p>
+          <div class="image"><img class="imgClass" id="img1" /></div>
+          <p class="tempValues" id="day1Temp"></p>
+          <p class="windValues" id="day1Wind"></p>
+          <p class="humidityValues" id="day1Humidity"></p>
         </div>
+        <div class="icons">
+          <p class="weather" id="day2"></p>
+          <div class="image"><img class="imgClass" id="img2" /></div>
+          <p class="tempValues" id="day2Temp"></p>
+          <p class="windValues" id="day2Wind"></p>
+          <p class="humidityValues" id="day2Humidity"></p>
+        </div>
+        <div class="icons">
+          <p class="weather" id="day3"></p>
+          <div class="image"><img class="imgClass" id="img3" /></div>
+          <p class="tempValues" id="day3Temp"></p>
+          <p class="windValues" id="day3Wind"></p>
+          <p class="humidityValues" id="day3Humidity"></p>
+        </div>
+        <div class="icons">
+          <p class="weather" id="day4"></p>
+          <div class="image"><img class="imgClass" id="img4" /></div>
+          <p class="tempValues" id="day4Temp"></p>
+          <p class="windValues" id="day4Wind"></p>
+          <p class="humidityValues" id="day4Humidity"></p>
+        </div>
+        <div class="icons">
+          <p class="weather" id="day5"></p>
+          <div class="image"><img class="imgClass" id="img5" /></div>
+          <p class="tempValues" id="day5Temp"></p>
+          <p class="windValues" id="day5Wind"></p>
+          <p class="humidityValues" id="day5Humidity"></p>
+        </div>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-    crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
 
-        <script src="./assets/script.js"></script>
-
-
-</body>
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
