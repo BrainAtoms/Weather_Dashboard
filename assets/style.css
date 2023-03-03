@@ -12,8 +12,11 @@ nav {
 }
 
 button {
+  display: flex;
+  justify-content: center;
+  position: relative;
   background-color: lightgrey;
-  margin-left: 650px;
+  margin-left: 590px;
   padding: 5px;
   font-size: 20px;
   font-weight: bold;
@@ -31,16 +34,22 @@ button {
 }
 
 #cityInput {
+  display: flex;
+  justify-content: center;
+  margin-left: 550px;
+  margin-top: 10px;
   background-color: blanchedalmond;
 }
 
 #cityName {
-  margin-left: 675px;
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
 }
 
 #weatherContainer {
-  position: absolute;
-  top: 70%;
+  position: relative;
+  top: 200px;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -51,7 +60,7 @@ button {
 }
 
 #ideasContainer {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   margin-right: -50%;
@@ -66,26 +75,20 @@ button {
   display: inline-block;
   /* float: left; */
   height: 220px;
-  width: 190px;
+  width: 150px;
   /* margin: 20px; */
-  margin-left: 55px;
+  margin-left: 80px;
   margin-right: auto;
+  margin-top: 50px; 
   border: 5px solid rgb(48, 47, 47);
   border-radius: 10px;
-}
-
-.image {
-  /* height: 140px;
-  width: 100%; */
 }
 
 .imgClass {
   /* height: 75%;
   width: 75%; */
   display: block;
-  margin-left: 70px;
-
-
+  margin-left: 45px;
 }
 
 .weather {
@@ -127,12 +130,19 @@ button {
 
 #currentDay {
   text-align: center;
-  margin-left: 50px;
+  margin-left: 10px;
   font-weight: bold;
+  font-size: xx-large;
 }
 
-#newCity {
+ul {
+  display: inline-block;
+  text-align: center;
+  margin-left: 600px;
+}
+
+/* #newCity {
   text-align: center;
   margin-left: 50px;
   font-weight: bold;
-}
+} */

@@ -12,16 +12,18 @@
     <h1 id="Para1">5 Days Weather Forecast</h1>
   </nav>
   <body onload="DefaultScreen()">
-    <form>
-      <p id="inputContainer">City: <input type="text" id="cityInput" /></p>
-    </form>
-    <button id="button" onclick="GetInfo(),addCity()">Check Weather</button>
-    <h2 id="cityName">---Atlanta---</h2>
-    <p id="newCity"></p>
-    <p id="currentDay" class="lead"></p>
-
     <div id="weatherContainer">
       <div id="iconsContainer">
+    <form id="form1" data-list="list">
+     
+    <input type="text" id="cityInput" placeholder="Enter a City" /></p>
+    <!-- <input type="submit"> -->
+    <button id="button" onclick="GetInfo()">Check Weather</button>
+    <h2 id="cityName"></h2>
+    <ul id="list"></ul>
+  </form>
+   
+    <p id="currentDay" class="lead"></p>
         <div class="icons">
           <p class="weather" id="day1"></p>
           <div class="image"><img class="imgClass" id="img1" /></div>
@@ -59,6 +61,7 @@
         </div>
       </div>
     </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script
