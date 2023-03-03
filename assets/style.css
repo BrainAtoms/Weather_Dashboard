@@ -138,7 +138,14 @@ button {
 ul {
   display: inline-block;
   text-align: center;
-  margin-left: 600px;
+  list-style-type: none;
+  margin-left: 595px;
+  font-size: large;
+  font-weight: bolder;
+}
+
+li:hover {
+  color: blue; 
 }
 
 /* #newCity {
