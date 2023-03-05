@@ -1,6 +1,6 @@
 * {
   color: rgb(7, 1, 1);
-  background: palegoldenrod;
+  background: lightskyblue;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -59,7 +59,7 @@
 
 h1,
 nav {
-  background-color: paleturquoise;
+  background-color: lightskyblue;
   display: flex;
   justify-content: center;
   max-width: 100%;
@@ -70,13 +70,15 @@ h1{
 }
 
 button {
-  background-color: lightgrey;
+  background-color: lightblue;
   margin-left: 590px;
   padding: 5px;
   margin-top: 10px;
   font-size: 20px;
   font-weight: bold;
 }
+
+
 
 #cityInput,
 #inputContainer {
@@ -88,7 +90,7 @@ button {
 
 #cityInput {
   margin-left: 550px;
-  background-color: blanchedalmond;
+  background-color: palegoldenrod;
 }
 
 #cityName {
@@ -116,7 +118,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px; 
-  border: 5px solid rgb(48, 47, 47);
+  border: 5px solid green;
   border-radius: 10px;
 }
 
@@ -190,7 +192,7 @@ ul {
 
 li:hover {
   cursor: pointer;
-  color: blue; 
+  color: green; 
 }
 
 li {
@@ -199,7 +201,7 @@ li {
   align-self: center;
   margin-right: 20px;
   font-size: x-large;
-  border:rgb(31, 82, 82) solid;
+  border:green solid;
   width: 20%; 
 }
 
