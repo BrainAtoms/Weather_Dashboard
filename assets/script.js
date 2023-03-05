@@ -46,32 +46,32 @@ function GetInfo(event) {
   )
     .then((response) => response.json())
     .then((data) => {
-      for (i = 0; i < 5; i++) {
+      for (i = 0; i < 6; i++) {
         document.getElementById("date" + (i + 1)).innerHTML = dayjs
-          .unix(data.list[i * 8].dt)
+          .unix(data.list[i * 7].dt)
           .format("MMM D, YYYY");
       }
-      for (i = 0; i < 5; i++) {
+      for (i = 0; i < 6; i++) {
         document.getElementById("day" + (i + 1) + "Temp").innerHTML =
-          "Temp: " + Number(data.list[i * 8].main.temp).toFixed(1) + "°";
+          "Temp: " + Number(data.list[i * 7].main.temp).toFixed(1) + "°";
       }
-      for (i = 0; i < 5; i++) {
+      for (i = 0; i < 6; i++) {
         document.getElementById("day" + (i + 1) + "Humidity").innerHTML =
-          "Humidity: " + data.list[i].main.humidity;
+          "Humidity: " + data.list[i * 7].main.humidity;
       }
-      for (i = 0; i < 5; i++) {
+      for (i = 0; i < 6; i++) {
         document.getElementById("day" + (i + 1) + "Wind").innerHTML =
-          "Wind Speed: " + data.list[i * 8].wind.speed;
+          "Wind Speed: " + data.list[i * 7].wind.speed;
       }
-      for (i = 0; i < 5; i++) {
+      for (i = 0; i < 6; i++) {
         document.getElementById("img" + (i + 1)).src =
           "http://openweathermap.org/img/wn/" +
-          data.list[i].weather[0].icon +
+          data.list[i * 7].weather[0].icon +
           ".png";
       }
     })
 
-    .catch((err) => alert("Something Went Wrong"));
+    // .catch((err) => alert("Something Went Wrong"));
 }
 
 function DefaultScreen() {
@@ -82,15 +82,15 @@ function DefaultScreen() {
 }
 
 function CheckDay(day) {
-  if (day + d.getDay() > 6) {
-    return day + d.getDay() - 7;
+  if (day + d.getDay() > 7) {
+    return day + d.getDay() - 8;
   } else {
     return day + d.getDay();
   }
 }
-for (i = 0; i < 5; i++) {
+for (i = 0; i < 6; i++) {
   document.getElementById("day" + (i + 1)).innerHTML = weekday[CheckDay(i)];
 }
 
-// currentDay = dayjs();
-// $("#currentDay").text(currentDay.format("dddd MMM D, YYYY"));
+currentDay = dayjs();
+$("#currentDay").text(currentDay.format("dddd MMM D, YYYY"));

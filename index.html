@@ -10,20 +10,20 @@
   </head>
   <div class="container">
   <nav>
-    <h1 id="Para1">5 Day Weather Forecast</h1>
+    <h1 id="Para1">Weather Forecast</h1>
   </nav>
   <body onload="DefaultScreen()">
     <div id="weatherContainer">
       <div id="iconsContainer">
     <form id="form1">
-     
-    <input type="text" id="cityInput" placeholder="Enter a City" />
+    <input type="text" id="cityInput" placeholder="Enter a City" onfocus="this.value=''"/>
     <button id="button" form="form1" type="submit">Check Weather</button>
     <h2 id="cityName"></h2>
     <ul id="list"></ul>
   </form>
    
-    <p id="currentDay" class="lead"></p>
+    <!-- <p id="currentDay" class="lead"></p> -->
+        <p class="forecast">Today:</p>
         <div class="icons">
           <p class="weather" id="day1"></p>
           <p class="date" id="date1"></p>
@@ -32,6 +32,7 @@
           <p class="windValues" id="day1Wind"></p>
           <p class="humidityValues" id="day1Humidity"></p>
         </div>
+        <p class="forecast">Next 5 Days:</p>
         <div class="icons">
           <p class="weather" id="day2"></p>
           <p class="date" id="date2"></p>
@@ -63,6 +64,14 @@
           <p class="tempValues" id="day5Temp"></p>
           <p class="windValues" id="day5Wind"></p>
           <p class="humidityValues" id="day5Humidity"></p>
+        </div>
+        <div class="icons">
+          <p class="weather" id="day6"></p>
+          <p class="date" id="date6"></p>
+          <div class="image"><img class="imgClass" id="img6" /></div>
+          <p class="tempValues" id="day6Temp"></p>
+          <p class="windValues" id="day6Wind"></p>
+          <p class="humidityValues" id="day6Humidity"></p>
         </div>
       </div>
     </div>
