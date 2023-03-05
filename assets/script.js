@@ -16,7 +16,7 @@ function addToList(newName) {
   var listItem = document.createElement("li");
   var inputItem = this.cityInput;
   listItem.innerText = newName;
-  listItem.addEventListener('click', onCityListItemClick)
+  listItem.addEventListener("click", onCityListItemClick);
   list.appendChild(listItem);
   inputItem.select();
   inputItem.focus();
@@ -24,14 +24,14 @@ function addToList(newName) {
 }
 
 function onCityListItemClick(e) {
-  const city = e.target.innerHTML
-  document.getElementById("cityInput").value = city
+  const city = e.target.innerHTML;
+  document.getElementById("cityInput").value = city;
   GetInfo();
 }
 
 function GetInfo(event) {
   if (event) {
-    event.preventDefault()
+    event.preventDefault();
   }
   const newName = document.getElementById("cityInput").value;
   if (!cityArr.includes(newName)) {
@@ -47,12 +47,13 @@ function GetInfo(event) {
     .then((response) => response.json())
     .then((data) => {
       for (i = 0; i < 5; i++) {
-        document.getElementById("date" + (i + 1)).innerHTML =
-          dayjs.unix(data.list[i*8].dt).format('MMM D, YYYY')
+        document.getElementById("date" + (i + 1)).innerHTML = dayjs
+          .unix(data.list[i * 8].dt)
+          .format("MMM D, YYYY");
       }
       for (i = 0; i < 5; i++) {
         document.getElementById("day" + (i + 1) + "Temp").innerHTML =
-          "Temp: " + Number(data.list[i*8].main.temp).toFixed(1) + "°";
+          "Temp: " + Number(data.list[i * 8].main.temp).toFixed(1) + "°";
       }
       for (i = 0; i < 5; i++) {
         document.getElementById("day" + (i + 1) + "Humidity").innerHTML =
@@ -60,7 +61,7 @@ function GetInfo(event) {
       }
       for (i = 0; i < 5; i++) {
         document.getElementById("day" + (i + 1) + "Wind").innerHTML =
-          "Wind Speed: " + data.list[i*8].wind.speed;
+          "Wind Speed: " + data.list[i * 8].wind.speed;
       }
       for (i = 0; i < 5; i++) {
         document.getElementById("img" + (i + 1)).src =
@@ -71,7 +72,6 @@ function GetInfo(event) {
     })
 
     .catch((err) => alert("Something Went Wrong"));
-
 }
 
 function DefaultScreen() {
@@ -80,7 +80,6 @@ function DefaultScreen() {
   document.getElementById("form1").onsubmit = GetInfo;
   GetInfo();
 }
-
 
 function CheckDay(day) {
   if (day + d.getDay() > 6) {
@@ -95,4 +94,3 @@ for (i = 0; i < 5; i++) {
 
 // currentDay = dayjs();
 // $("#currentDay").text(currentDay.format("dddd MMM D, YYYY"));
-

@@ -1,59 +1,60 @@
 * {
   color: rgb(7, 1, 1);
   background: lightskyblue;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
-@media (max-width:500px){ 
-  html, body {
-      overflow-x: clip;
+@media (max-width: 500px) {
+  html,
+  body {
+    overflow-x: clip;
   }
 }
 
-@media (max-width:500px){ 
+@media (max-width: 500px) {
   #weatherContainer {
-      display:flex;
-      flex-direction: column;
-      align-items:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-@media (max-width:500px){ 
+@media (max-width: 500px) {
   button {
-      margin-right: 580px;
+    margin-right: 580px;
   }
 }
 
-@media (max-width:500px){ 
+@media (max-width: 500px) {
   #cityInput {
-      margin-right: 550px;
+    margin-right: 550px;
   }
 }
 
-@media (max-width:500px){ 
+@media (max-width: 500px) {
   ul {
-      margin-right: 20px;
+    margin-right: 20px;
   }
 }
 
-@media (max-width:500px){ 
+@media (max-width: 500px) {
   form {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 }
 
-@media (max-width:500px){ 
+@media (max-width: 500px) {
   #iconsContainer {
-      display: block;
-      max-width:100%;
+    display: block;
+    max-width: 100%;
   }
 }
 
-@media (max-width:500px){ 
+@media (max-width: 500px) {
   #form1 {
-      display: block;
-      max-width:100%;
+    display: block;
+    max-width: 100%;
   }
 }
 
@@ -65,20 +66,18 @@ nav {
   max-width: 100%;
 }
 
-h1{
-  margin-left:25px;
+h1 {
+  margin-left: 25px;
 }
 
 button {
   background-color: lightblue;
-  margin-left: 590px;
+  margin-left: 585px;
   padding: 5px;
   margin-top: 10px;
   font-size: 20px;
   font-weight: bold;
 }
-
-
 
 #cityInput,
 #inputContainer {
@@ -117,7 +116,7 @@ button {
   width: 150px;
   margin-left: auto;
   margin-right: 560px;
-  margin-top: 50px; 
+  margin-top: 50px;
   border: 5px solid green;
   border-radius: 10px;
 }
@@ -129,15 +128,12 @@ button {
 
 .weather {
   margin: 5px;
-  border-radius: 5px;
   text-align: center;
   font-weight: bold;
 }
 
 .tempValues {
   text-align: center;
-  display: inline-block;
-  border-radius: 5px;
   height: auto;
   width: auto;
   margin: 0;
@@ -146,8 +142,6 @@ button {
 
 .windValues {
   text-align: center;
-  display: inline-block;
-  border-radius: 5px;
   height: auto;
   width: auto;
   margin: 0;
@@ -156,22 +150,18 @@ button {
 
 .humidityValues {
   text-align: center;
-  display: inline-block;
-  border-radius: 5px;
   height: auto;
   width: auto;
   margin: 0;
-  padding: 10px; 
+  padding: 10px;
 }
 
 .date {
   text-align: center;
-  display: inline-block;
-  border-radius: 5px;
   height: auto;
   width: auto;
   margin: 0;
-  padding: 10px; 
+  padding: 10px;
 }
 
 #currentDay {
@@ -182,9 +172,9 @@ button {
 }
 
 ul {
-  display: flex; 
+  display: flex;
   flex-direction: column;
-  text-align:center;
+  text-align: center;
   list-style-type: none;
   font-size: large;
   font-weight: bolder;
@@ -192,19 +182,16 @@ ul {
 
 li:hover {
   cursor: pointer;
-  color: grey; 
+  color: grey;
 }
 
 li {
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-self: center;
   margin-right: 20px;
   font-size: x-large;
   background-color: snow;
-  border:lightgrey solid;
-  width: 20%; 
+  border: lightgrey solid;
+  width: 20%;
 }
-
-
-
