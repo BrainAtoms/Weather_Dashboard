@@ -116,7 +116,7 @@ button {
 .icons {
   width: 150px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 560px;
   margin-top: 50px; 
   border: 5px solid green;
   border-radius: 10px;
@@ -192,7 +192,7 @@ ul {
 
 li:hover {
   cursor: pointer;
-  color: green; 
+  color: grey; 
 }
 
 li {
@@ -201,7 +201,8 @@ li {
   align-self: center;
   margin-right: 20px;
   font-size: x-large;
-  border:green solid;
+  background-color: snow;
+  border:lightgrey solid;
   width: 20%; 
 }
 
