@@ -11,6 +11,7 @@ var weekday = [
   "Sunday",
 ];
 
+// adds searched city to list of searches 
 function addToList(newName) {
   var list = document.getElementById("list"); // only needed if more than one form or list
   var listItem = document.createElement("li");
@@ -23,12 +24,14 @@ function addToList(newName) {
   return false; // stop submission
 }
 
+// retrieves weather data of previously searched city 
 function onCityListItemClick(e) {
   const city = e.target.innerHTML;
   document.getElementById("cityInput").value = city;
   GetInfo();
 }
 
+// obtains weather information for city that is searched
 function GetInfo(event) {
   if (event) {
     event.preventDefault();
@@ -71,7 +74,7 @@ function GetInfo(event) {
       }
     })
 
-    // .catch((err) => alert("Something Went Wrong"));
+    .catch((err) => alert("Something Went Wrong"));
 }
 
 function DefaultScreen() {
@@ -81,6 +84,7 @@ function DefaultScreen() {
   GetInfo();
 }
 
+// makes sure correct weekday is displayed in weather box
 function CheckDay(day) {
   if (day + d.getDay() > 7) {
     return day + d.getDay() - 8;
@@ -91,6 +95,3 @@ function CheckDay(day) {
 for (i = 0; i < 6; i++) {
   document.getElementById("day" + (i + 1)).innerHTML = weekday[CheckDay(i)];
 }
-
-currentDay = dayjs();
-$("#currentDay").text(currentDay.format("dddd MMM D, YYYY"));
