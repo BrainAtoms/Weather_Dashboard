@@ -4,7 +4,7 @@ The Weather Dashboard was created as a resource for people to view the weather c
 
 # ![Screen Shot 2023-03-05 at 6 17 42 PM (2)](https://user-images.githubusercontent.com/61917285/222991857-f364f5b9-a606-4580-a681-1b8a454f674b.png)
 
-# [Weather Dashboard] (https://brainatoms.github.io/Weather_Dashboard/)
+# [Weather Dashboard](https://brainatoms.github.io/Weather_Dashboard/)
 
 ## Installation
 
