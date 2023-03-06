@@ -19,6 +19,7 @@ function addToList(newName) {
   listItem.innerText = newName;
   listItem.addEventListener("click", onCityListItemClick);
   list.appendChild(listItem);
+  localStorage.setItem('city', listItem.innerHTML)
   inputItem.select();
   inputItem.focus();
   return false; // stop submission
@@ -42,6 +43,9 @@ function GetInfo(event) {
     cityArr.push(newName);
     addToList(newName);
   }
+
+
+
 
   fetch(
     "https://api.openweathermap.org/data/2.5/forecast?q=" +
