@@ -10,13 +10,13 @@
     overflow-x: clip;
   }
 }
-/* 
+
 @media (max-width: 500px) {
-  #button {
+  #cityInput {
     margin-left: 590px;
 
   }
-} */
+}
 
 h1,
 nav {
