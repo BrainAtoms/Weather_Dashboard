@@ -11,7 +11,7 @@ var weekday = [
   "Sunday",
 ];
 
-// adds searched city to list of searches 
+// adds searched city to list of searches
 function addToList(newName) {
   var list = document.getElementById("list"); // only needed if more than one form or list
   var listItem = document.createElement("li");
@@ -24,7 +24,7 @@ function addToList(newName) {
   return false; // stop submission
 }
 
-// retrieves weather data of previously searched city 
+// retrieves weather data of previously searched city
 function onCityListItemClick(e) {
   const city = e.target.innerHTML;
   document.getElementById("cityInput").value = city;
@@ -73,7 +73,6 @@ function GetInfo(event) {
           ".png";
       }
     })
-
     .catch((err) => alert("Something Went Wrong"));
 }
 
