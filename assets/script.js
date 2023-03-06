@@ -33,6 +33,7 @@ function onCityListItemClick(e) {
 
 // obtains weather information for city that is searched
 function GetInfo(event) {
+
   if (event) {
     event.preventDefault();
   }

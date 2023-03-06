@@ -20,12 +20,6 @@
 }
 
 @media (max-width: 500px) {
-  button {
-    margin-right: 580px;
-  }
-}
-
-@media (max-width: 500px) {
   #cityInput {
     margin-right: 550px;
   }
