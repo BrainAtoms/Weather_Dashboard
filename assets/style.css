@@ -47,7 +47,7 @@
 
 @media (max-width: 500px) {
   #form1 {
-    display: block;
+    display: inline-block;
     max-width: 100%;
   }
 }
@@ -77,7 +77,7 @@ h1 {
 
 button {
   background-color: lightblue;
-  margin-left: 590px;
+  margin-left: 585px;
   padding: 5px;
   margin-top: 10px;
   font-size: 20px;
