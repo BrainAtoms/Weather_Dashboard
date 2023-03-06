@@ -19,7 +19,7 @@ function addToList(newName) {
   listItem.innerText = newName;
   listItem.addEventListener("click", onCityListItemClick);
   list.appendChild(listItem);
-  localStorage.setItem("city", listItem.innerHTML);
+  localStorage.setItem("cities", cityArr);
   inputItem.select();
   inputItem.focus();
   return false; // stop submission
