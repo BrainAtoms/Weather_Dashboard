@@ -19,7 +19,7 @@ function addToList(newName) {
   listItem.innerText = newName;
   listItem.addEventListener("click", onCityListItemClick);
   list.appendChild(listItem);
-  localStorage.setItem('city', listItem.innerHTML)
+  localStorage.setItem("city", listItem.innerHTML);
   inputItem.select();
   inputItem.focus();
   return false; // stop submission
@@ -34,7 +34,6 @@ function onCityListItemClick(e) {
 
 // obtains weather information for city that is searched
 function GetInfo(event) {
-
   if (event) {
     event.preventDefault();
   }
@@ -43,9 +42,6 @@ function GetInfo(event) {
     cityArr.push(newName);
     addToList(newName);
   }
-
-
-
 
   fetch(
     "https://api.openweathermap.org/data/2.5/forecast?q=" +

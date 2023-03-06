@@ -4,10 +4,16 @@
   font-family: "Times New Roman", Times, serif;
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   html,
   body {
     overflow-x: clip;
+  }
+} */
+
+@media (max-width: 500px) {
+  #button {
+    margin-left: 575px;
   }
 }
 
