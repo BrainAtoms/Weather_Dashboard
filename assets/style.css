@@ -18,10 +18,12 @@ h1 {
 input {
   background-color: rgb(255, 255, 179);
   text-align: center;
+  font-size: large;
 }
 
 button {
   background-color: rgb(255, 242, 105);
+  font-size: large;
 }
 
 .forecast {
@@ -31,7 +33,6 @@ button {
   font-weight: bold;
   color: black;
 }
-
 
 .icons {
   margin-top: 10px;
@@ -93,10 +94,11 @@ button {
 }
 
 ul {
-  display: flex;
+  display:flex;
   justify-content: center;
-  flex-direction: column;
-  margin-left: 435px;
+  align-items: center;
+  flex-direction:column;
+  margin-right: 40px;
   list-style-type: none;
   font-size: large;
   font-weight: bolder;

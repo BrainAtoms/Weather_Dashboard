@@ -95,5 +95,3 @@ function CheckDay(day) {
 for (i = 0; i < 6; i++) {
   document.getElementById("day" + (i + 1)).innerHTML = weekday[CheckDay(i)];
 }
-
-
