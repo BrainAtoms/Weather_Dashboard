@@ -54,7 +54,7 @@ input {
 #weatherContainer {
   position:relative;
   top: 170px;
-  left: 50%;
+  margin-left: 200px;
   transform: translate(-50%, -50%);
   height: 300px;
   width: 1300px;
