@@ -13,19 +13,18 @@
     <h1 id="Para1">Weather Forecast</h1>
   </nav>
   <body onload="DefaultScreen()">
-    <div id="weatherContainer">
-      <div id="iconsContainer">
     <form id="form1">
     <input type="text" id="cityInput" placeholder="Enter a City" onfocus="this.value=''"/>
+    <br>
     <button id="button" form="form1" type="submit">Check Weather</button>
     <h2 id="cityName"></h2>
-    <ul id="list"></ul>
   </form>
+        <ul id="list"></ul>
         <p class="forecast">Today:</p>
         <div class="icons">
           <p class="weather" id="day1"></p>
           <p class="date" id="date1"></p>
-          <div class="image"><img class="imgClass" id="img1" /></div>
+          <p class="image"><img class="imgClass" id="img1" /></p>
           <p class="tempValues" id="day1Temp"></p>
           <p class="windValues" id="day1Wind"></p>
           <p class="humidityValues" id="day1Humidity"></p>
@@ -34,7 +33,7 @@
         <div class="icons">
           <p class="weather" id="day2"></p>
           <p class="date" id="date2"></p>
-          <div class="image"><img class="imgClass" id="img2" /></div>
+          <p class="image"><img class="imgClass" id="img2" /></p>
           <p class="tempValues" id="day2Temp"></p>
           <p class="windValues" id="day2Wind"></p>
           <p class="humidityValues" id="day2Humidity"></p>
@@ -42,7 +41,7 @@
         <div class="icons">
           <p class="weather" id="day3"></p>
           <p class="date" id="date3"></p>
-          <div class="image"><img class="imgClass" id="img3" /></div>
+          <p class="image"><img class="imgClass" id="img3" /></p>
           <p class="tempValues" id="day3Temp"></p>
           <p class="windValues" id="day3Wind"></p>
           <p class="humidityValues" id="day3Humidity"></p>
@@ -50,7 +49,7 @@
         <div class="icons">
           <p class="weather" id="day4"></p>
           <p class="date" id="date4"></p>
-          <div class="image"><img class="imgClass" id="img4" /></div>
+          <p class="image"><img class="imgClass" id="img4" /></p>
           <p class="tempValues" id="day4Temp"></p>
           <p class="windValues" id="day4Wind"></p>
           <p class="humidityValues" id="day4Humidity"></p>
@@ -58,7 +57,7 @@
         <div class="icons">
           <p class="weather" id="day5"></p>
           <p class="date" id="date5"></p>
-          <div class="image"><img class="imgClass" id="img5" /></div>
+          <p class="image"><img class="imgClass" id="img5" /></p>
           <p class="tempValues" id="day5Temp"></p>
           <p class="windValues" id="day5Wind"></p>
           <p class="humidityValues" id="day5Humidity"></p>
@@ -66,14 +65,12 @@
         <div class="icons">
           <p class="weather" id="day6"></p>
           <p class="date" id="date6"></p>
-          <div class="image"><img class="imgClass" id="img6" /></div>
+          <p class="image"><img class="imgClass" id="img6" /></p>
           <p class="tempValues" id="day6Temp"></p>
           <p class="windValues" id="day6Wind"></p>
           <p class="humidityValues" id="day6Humidity"></p>
         </div>
       </div>
-    </div>
-  </div>
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
