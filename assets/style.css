@@ -12,7 +12,11 @@ h1 {
 
 #form1 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
 }
 
 input {
@@ -35,9 +39,13 @@ button {
 }
 
 .icons {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 10px;
   border: 15px solid rgb(36, 181, 36);
   border-radius: 10px;
+  width: 200px;
 }
 
 .image {
@@ -99,6 +107,7 @@ ul {
   align-items: center;
   flex-direction:column;
   margin-right: 40px;
+  margin-top:-20px;
   list-style-type: none;
   font-size: large;
   font-weight: bolder;
