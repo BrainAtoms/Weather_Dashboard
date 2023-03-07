@@ -12,8 +12,8 @@
 }
 
 @media (max-width: 500px) {
-  #form1 {
-    display: inline;
+  #cityInput {
+    margin-left: 550px;
   }
 }
 
