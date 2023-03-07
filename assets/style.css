@@ -95,7 +95,8 @@ button {
 ul {
   display: flex;
   justify-content: center;
-  margin-right: 40px;
+  flex-direction: column;
+  margin-left: 435px;
   list-style-type: none;
   font-size: large;
   font-weight: bolder;
