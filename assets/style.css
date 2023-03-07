@@ -43,14 +43,7 @@ button {
   font-weight: bold;
 }
 
-#inputContainer {
-  padding: 5px;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-#cityInput {
+input {
   margin-left: 565px;
   height: 30px;
   text-align: center;
@@ -58,24 +51,13 @@ button {
   background-color: palegoldenrod;
 }
 
-#cityName {
-  margin-left: 30px;
-}
-
 #weatherContainer {
-  position: relative;
-  top: 200px;
+  position:relative;
+  top: 170px;
   left: 50%;
-  margin-right: -50%;
   transform: translate(-50%, -50%);
   height: 300px;
   width: 1300px;
-  border-radius: 10px;
-}
-
-#ideasContainer {
-  border: 5px solid rgb(31, 82, 82);
-  border-radius: 10px;
 }
 
 .icons {
