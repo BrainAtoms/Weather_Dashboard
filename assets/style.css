@@ -11,12 +11,6 @@
   }
 }
 
-@media (max-width: 500px) {
-  #cityInput {
-    margin-left: 550px;
-  }
-}
-
 h1,
 nav {
   background-color: lightskyblue;
@@ -49,7 +43,6 @@ button {
   font-weight: bold;
 }
 
-#cityInput,
 #inputContainer {
   padding: 5px;
   text-align: center;
@@ -58,7 +51,10 @@ button {
 }
 
 #cityInput {
-  margin-left: 550px;
+  margin-left: 565px;
+  height: 30px;
+  text-align: center;
+  font-size: large;
   background-color: palegoldenrod;
 }
 
