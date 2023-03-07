@@ -44,9 +44,8 @@ button {
 }
 
 input {
-  margin-left: 610px;
+  margin-left: 565px;
   height: 30px;
-  width: 100px;
   text-align: center;
   font-size: large;
   background-color: palegoldenrod;
@@ -55,7 +54,7 @@ input {
 #weatherContainer {
   position:relative;
   top: 170px;
-  margin-left: 200px;
+  left: 50%;
   transform: translate(-50%, -50%);
   height: 300px;
   width: 1300px;
@@ -138,9 +137,9 @@ li {
   display: flex;
   justify-content: center;
   align-self: center;
-  margin-right: 15px;
+  margin-right: 20px;
   font-size: x-large;
   background-color: snow;
   border: lightgrey solid;
-  width: 18%;
+  width: 20%;
 }
